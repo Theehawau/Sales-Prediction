@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/user1/Documents/GitHub/Sales-Prediction/notebooks/mlruns/1/6858d69d07de4082bf5bec53aa61065d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 6858d69d07de4082bf5bec53aa61065d
+run_uuid: 6858d69d07de4082bf5bec53aa61065d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1627302759294
+status: 1
+tags: []
+user_id: user1
