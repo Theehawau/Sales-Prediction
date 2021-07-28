@@ -1,0 +1,9 @@
+INFO:root:This log file records the steps for this project
+INFO:root:Utility Functions Created for this projectand required Libraries are Imported
+INFO:root:Data is read from data folder
+INFO:root:Training DataSet contains 1017209 rowsand 9 columns
+INFO:root:Null values in Store dataset were filled with 0
+INFO:root:Date columns in test and train dataset were converted to datetime datatype
+INFO:root:Promo2SinceYear column in store_db was converted to int datatype
+INFO:root:Train and Store Dataset were merged on Store with Inner join
+INFO:root:Check promo distribution for test and train datasets
