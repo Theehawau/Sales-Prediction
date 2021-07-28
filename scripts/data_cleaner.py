@@ -4,9 +4,9 @@ class Clean_Data:
     """
     The PEP8 Standard AMAZING!!!
     """
-    def __init__(self, df:pd.DataFrame):
-        self.df = df
-        print('Automation in Action...!!!')
+    def __init__(self):
+        # self.df = df
+        print('Utility Functions Imported!!!')
 
     def read_data(self, path):
         data = pd.read_csv(path)
@@ -18,6 +18,12 @@ class Clean_Data:
         """
         df.drop_duplicates(inplace=True)
         return df
+    
+    def fill_null(self,column:str,df:pd.DataFrame,value):
+    	"""
+    	fill null values with specified value
+    	"""
+    	df[column] = df[column].fillna(value)
 
     def to_datetime(self, df:pd.DataFrame, col, format):
         """
@@ -26,10 +32,9 @@ class Clean_Data:
         df[col] = pd.to_datetime(df[col],format=format)
 
     
-    def convert_type(self, df:pd.DataFrame,col,type)->pd.DataFrame:
+    def convert_type(self, df:pd.DataFrame,col:str,type)->pd.DataFrame:
         """
-        convert columns like polarity, subjectivity, retweet_count
-        favorite_count etc to numbers
+        convert column data type to str or int
         """
-        df.astype({col:type})
+        df[col] = df[col].astype(type)
     
