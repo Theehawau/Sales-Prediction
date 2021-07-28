@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/user1/Documents/GitHub/Sales-Prediction/scripts/mlruns/1/8a75ab022334474898e14ad066f1fb1b/artifacts
+end_time: 1627503128286
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 8a75ab022334474898e14ad066f1fb1b
+run_uuid: 8a75ab022334474898e14ad066f1fb1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1627503123220
+status: 3
+tags: []
+user_id: user1

@@ -45,9 +45,14 @@ mlflow.log_param('input_cols', train_db.shape[1])
 
 
 # %%
-cols = pd.DataFrame(list(train_db.columns))
-cols.to_csv('features.csv', header=False, index=False)
+cols_x = pd.DataFrame(list(train_db.columns))
+cols_x.to_csv('features.csv', header=False, index=False)
 mlflow.log_artifact('features.csv')
+
+
+cols_y = pd.DataFrame(list(y.columns))
+cols_y.to_csv('target.csv', header=False, index=False)
+mlflow.log_artifact('target.csv')
 
 
 # %%
