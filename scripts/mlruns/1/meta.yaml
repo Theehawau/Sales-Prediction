@@ -1,0 +1,4 @@
+artifact_location: file:///Users/user1/Documents/GitHub/Sales-Prediction/scripts/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: Sales Prediction
