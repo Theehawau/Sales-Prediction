@@ -2,8 +2,6 @@ import unittest
 import pandas as pd
 import sys, os 
 sys.path.append(os.path.abspath(os.path.join('../')))
-# sys.path.insert(0, '../scripts/')
-# import scripts.data_cleaner
 
 from scripts.data_cleaner import Clean_Data
 utils = Clean_Data()
@@ -12,7 +10,6 @@ utils = Clean_Data()
 class TestClean_Data(unittest.TestCase):
     """
     A class for unit-testing functiosns in the data_cleaner.py file.
-s
     """
     def setUp(self):
         self.df = pd.read_csv('store.csv').head(500)
