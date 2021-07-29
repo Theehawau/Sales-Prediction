@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 import sys, os 
-sys.path.append(os.path.abspath(os.path.join('../data')))
+sys.path.append(os.path.abspath(os.path.join('..')))
 
 from scripts.data_cleaner import Clean_Data
 utils = Clean_Data()
@@ -12,11 +12,11 @@ class TestClean_Data(unittest.TestCase):
     A class for unit-testing functiosns in the data_cleaner.py file.
     """
     def setUp(self):
-        self.df = pd.read_csv('store.csv').head(500)
+        self.df = pd.read_csv('data/store.csv').head(500)
         return self.df
          
     def test_read_data(self):
-        self.assertIsInstance( utils.read_data('store.csv'), pd.DataFrame)
+        self.assertIsInstance( utils.read_data('data/store.csv'), pd.DataFrame)
 
     def test_fill_null(self):
         utils.fill_null('Promo2SinceWeek',self.df,0)
