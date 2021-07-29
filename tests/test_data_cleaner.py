@@ -13,7 +13,7 @@ class TestClean_Data(unittest.TestCase):
 s
     """
     def setUp(self):
-        self.df = pd.read_csv('data/store.csv').head(500)
+        self.df = pd.read_csv('store.csv').head(500)
         return self.df
          
     def test_read_data(self):
