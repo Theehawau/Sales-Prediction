@@ -17,7 +17,7 @@ s
         return self.df
          
     def test_read_data(self):
-        self.assertIsInstance( utils.read_data('../data/test.csv'), pd.DataFrame)
+        self.assertIsInstance( utils.read_data('store.csv'), pd.DataFrame)
 
     def test_fill_null(self):
         utils.fill_null('Promo2SinceWeek',self.df,0)
