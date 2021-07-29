@@ -1,5 +1,5 @@
 artifact_uri: file:///Users/user1/Documents/GitHub/Sales-Prediction/notebooks/mlruns/1/5376104df60241d3b8edc6fef287184c/artifacts
-end_time: null
+end_time: 1627578919145
 entry_point_name: ''
 experiment_id: '1'
 lifecycle_stage: active
@@ -10,6 +10,6 @@ source_name: ''
 source_type: 4
 source_version: ''
 start_time: 1627574659915
-status: 1
+status: 3
 tags: []
 user_id: user1

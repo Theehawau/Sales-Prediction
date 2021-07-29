@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 import sys, os 
-sys.path.append(os.path.abspath(os.path.join('../')))
+sys.path.append(os.path.abspath(os.path.join('../data')))
 
 from scripts.data_cleaner import Clean_Data
 utils = Clean_Data()
