@@ -326,7 +326,8 @@ def eval_metrics(actual,pred):
 
 
 print(f'Sales prediction model: \n \t RMSE:{eval_metrics(Y_test,Y_pred)[0]} \n \t MAE:{eval_metrics(Y_test,Y_pred)[1]} \n \t R2:{eval_metrics(Y_test,Y_pred)[2]}')
-
+with open("../metrics.txt", 'w') as outfile:
+        outfile.write(f'Sales prediction model: \n \t RMSE:{eval_metrics(Y_test,Y_pred)[0]} \n \t MAE:{eval_metrics(Y_test,Y_pred)[1]} \n \t R2:{eval_metrics(Y_test,Y_pred)[2]}')
 
 # In[40]:
 
