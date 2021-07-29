@@ -27,6 +27,7 @@ s
         self.assertEqual(val,0,msg='Column has null values')
 
 
+
 if __name__ == '__main__':
 	unittest.main()
 
