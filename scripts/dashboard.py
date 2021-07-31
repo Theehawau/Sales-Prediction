@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import sys, os 
+import base64
 sys.path.append(os.path.abspath(os.path.join('../')))
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
@@ -22,6 +23,17 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y['Sales'], test_size=0.2
 st.set_page_config(page_title='Predict Sales', layout='wide')
 st.title('Sales Prediction Dashboard')
 st.markdown('This helps to predict sales for a Pharmaceutical Company')
+
+def get_table_download_link(df):
+    """Generates a link allowing the data in a given panda dataframe to be downloaded
+    in:  dataframe
+    out: href string
+    """
+    csv = df.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
+    href = f'<a href="data:file/csv;base64,{b64}" download="Prediction.csv">Download Prediction csv file</a>'
+    return href
+
 
 st.sidebar.title('Predict')
 st.sidebar.markdown('You can try Different Models!!')
@@ -47,6 +59,7 @@ if model == "Random Forest Regression":
             # st.write("R2 Score: ", r2_score(y_test,y_pred))
             prediction = pd.DataFrame(y_pred,columns=['Predicted Sales'])
             st.write(prediction)
+            st.markdown(get_table_download_link(prediction), unsafe_allow_html=True)
     if uploaded_file is None:
         if st.sidebar.button("Predict", key="predict"):
             st.subheader("Random Forest Results")
