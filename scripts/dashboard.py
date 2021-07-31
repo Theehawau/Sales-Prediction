@@ -45,7 +45,7 @@ if model == "Random Forest Regression":
             y_pred = clf.predict(X_test)
             # st.write("RMSE: ", np.sqrt(mean_squared_error(y_test,y_pred)))
             # st.write("R2 Score: ", r2_score(y_test,y_pred))
-            prediction = pd.DataFrame(y_pred,columns='Predicted Sales')
+            prediction = pd.DataFrame(y_pred,columns=['Predicted Sales'])
             st.write(prediction)
     if uploaded_file is None:
         if st.sidebar.button("Predict", key="predict"):
