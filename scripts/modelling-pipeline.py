@@ -152,8 +152,8 @@ X.reset_index().drop(columns=['index'], inplace =True)
 # In[ ]:
 
 
-data_url = '../data/train.csv'
-version = 'v1'
+data_url = '../data/X.csv'
+version = 'v2'
 mlflow.log_param('data_url', data_url)
 mlflow.log_param('data_version', version)
 mlflow.log_param('input_rows',X.shape[0])
