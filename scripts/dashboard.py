@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score,mean_squared_error
 
 # load data
-X = pd.read_csv('X.csv')
+X = pd.read_csv('https://drive.google.com/file/d/1sgPGD84cNyfm3Sve6WiLTGJgITIhZluJ/view?usp=sharing')
 Y = pd.read_csv('./Y.csv')
 
 
