@@ -29,7 +29,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y['Sales'], test_size=0.2
 st.set_page_config(page_title='Predict Sales', layout='wide')
 st.title('Sales Prediction Dashboard')
 st.markdown('This helps to predict sales for a Pharmaceutical Company')
-st.write(Y)
+
 def get_table_download_link(df):
     """Generates a link allowing the data in a given panda dataframe to be downloaded
     in:  dataframe
