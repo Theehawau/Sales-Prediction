@@ -12,8 +12,14 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score,mean_squared_error
 
 # load data
-X = pd.read_csv('https://drive.google.com/file/d/1sgPGD84cNyfm3Sve6WiLTGJgITIhZluJ/view?usp=sharing')
-Y = pd.read_csv('https://drive.google.com/file/d/1w8-oe8hcEdu0MAGfvEsxGkPuEaW5SOmn/view?usp=sharing')
+X_url = 'https://drive.google.com/file/d/1sgPGD84cNyfm3Sve6WiLTGJgITIhZluJ/view?usp=sharing'
+X_path = 'https://drive.google.com/uc?export=download&id='+X_url.split('/')[-2]
+
+Y_url ='https://drive.google.com/file/d/1w8-oe8hcEdu0MAGfvEsxGkPuEaW5SOmn/view?usp=sharing'
+Y_path = 'https://drive.google.com/uc?export=download&id='+Y_url.split('/')[-2]
+
+X = pd.read_csv(X_path)
+Y = pd.read_csv(Y_path)
 
 
 # split into train and test set
@@ -23,7 +29,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y['Sales'], test_size=0.2
 st.set_page_config(page_title='Predict Sales', layout='wide')
 st.title('Sales Prediction Dashboard')
 st.markdown('This helps to predict sales for a Pharmaceutical Company')
-
+st.write(Y)
 def get_table_download_link(df):
     """Generates a link allowing the data in a given panda dataframe to be downloaded
     in:  dataframe
