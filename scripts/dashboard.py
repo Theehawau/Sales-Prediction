@@ -12,8 +12,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score,mean_squared_error
 
 # load data
-X = pd.read_csv('X.csv')
-Y = pd.read_csv('Y.csv')
+X = pd.read_csv('./X.csv')
+Y = pd.read_csv('./Y.csv')
 
 
 # split into train and test set
