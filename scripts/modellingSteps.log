@@ -26,3 +26,60 @@ INFO:root:Predict Y_pred from X_test using regressor.predict
 INFO:root:Check Model Accuracy:
 INFO:root:Import rmse,mae,rs2 libraries from sklearn.metrics
 INFO:root:Compute rmse,mae,rs2 values
+INFO:root:This log file records the steps for modelling for this project
+INFO:root:Import utility scripts
+INFO:root:Import Train Dataset to db
+INFO:root:Import Test Dataset to test_db
+INFO:root:Commence Data Processing:
+INFO:root:Convert Date columns in db and test_db to Datetime type
+INFO:root:Get date features from date column in db and test_db
+INFO:root:Extract feature columns from db to train_db:
+INFO:root:Drop Columns:"Date,Customers,Sales,PromoInterval,CompetitionOpenSinceYear,CompetitionOpenSinceMonth"
+INFO:root:Drop columns:"Id,PromoInterval,CompetitionOpenSinceYear,CompetitionOpenSinceMonth" in test_db:
+INFO:root:Extract Sales column from db into y for target variable
+INFO:root:Encode Categorical variables in train_db and test_db:
+INFO:root:Encode Columns:"StoreType,Assortment,StateHoliday" in train_db.
+INFO:root:Encode Columns:"StoreType,Assortment" in test_db.
+INFO:root:Start Feature Scaling:
+INFO:root:Import StandardScaler from sklearn.preprocessing
+INFO:root:Scale train_db into X
+INFO:root:Split data into train and test set:
+INFO:root:Import train_test_split from sklearn.model_selection
+INFO:root:Split X into X_train, X_test and y into Y_train and Y_test in ratio 80:20
+INFO:root:Train model:
+INFO:root:Import Linear Regression from sklearn.linear_model
+INFO:root:Create instance of Linear Regression in regressor
+INFO:root:Fit regressor to X_train,Y_train
+INFO:root:Predict Y_pred from X_test using regressor.predict
+INFO:root:Check Model Accuracy:
+INFO:root:Import rmse,mae,rs2 libraries from sklearn.metrics
+INFO:root:Compute rmse,mae,rs2 values
+INFO:root:This log file records the steps for modelling for this project
+INFO:root:Import utility scripts
+INFO:root:Import Train Dataset to db
+INFO:root:Import Test Dataset to test_db
+INFO:root:Commence Data Processing:
+INFO:root:Convert Date columns in db and test_db to Datetime type
+INFO:root:Get date features from date column in db and test_db
+INFO:root:Extract feature columns from db to train_db:
+INFO:root:Drop Columns:"Date,Customers,Sales,PromoInterval,CompetitionOpenSinceYear,CompetitionOpenSinceMonth"
+INFO:root:Drop columns:"Id,PromoInterval,CompetitionOpenSinceYear,CompetitionOpenSinceMonth" in test_db:
+INFO:root:Extract Sales column from db into y for target variable
+INFO:root:Encode Categorical variables in train_db and test_db:
+INFO:root:Encode Columns:"StoreType,Assortment,StateHoliday" in train_db.
+INFO:root:Encode Columns:"StoreType,Assortment" in test_db.
+INFO:root:Start Feature Scaling:
+INFO:root:Import StandardScaler from sklearn.preprocessing
+INFO:root:Scale train_db into X
+INFO:root:Split data into train and test set:
+INFO:root:Import train_test_split from sklearn.model_selection
+INFO:root:Split X into X_train, X_test and y into Y_train and Y_test in ratio 80:20
+INFO:root:Train model:
+INFO:root:Import Linear Regression from sklearn.linear_model
+INFO:root:Create instance of Linear Regression in regressor
+INFO:root:Fit regressor to X_train,Y_train
+INFO:root:Predict Y_pred from X_test using regressor.predict
+INFO:root:Check Model Accuracy:
+INFO:root:Import rmse,mae,rs2 libraries from sklearn.metrics
+INFO:root:Compute rmse,mae,rs2 values
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.

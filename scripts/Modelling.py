@@ -34,7 +34,7 @@ logging.info('This log file records the steps for modelling for this project')
 # In[4]:
 
 
-def log(text:str):
+def log(text):
     logging.info(text)
 
 
