@@ -33,7 +33,7 @@ setup(
     packages=find_packages(include=['scripts', 'scripts.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='hhttps://github.com/Theehawau/Sales-Prediction',
+    url='https://github.com/Theehawau/Sales-Prediction',
     version='0.1.0',
     zip_safe=False,
 )
