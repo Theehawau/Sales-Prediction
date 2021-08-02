@@ -12,7 +12,9 @@ python-3.6.4
 
 ### Installation
 git clone this repo
+
 cd Sales-Prediction
+
 run pip -r install requirements.txt
 
 ### Features
