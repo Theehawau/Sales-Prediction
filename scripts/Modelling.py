@@ -66,7 +66,7 @@ log('Import Train Dataset to db')
 # In[8]:
 
 
-db = util.read_data('../data/trainData.csv')
+db = pd.read_csv('../data/trainData.csv')
 db.head(2)
 
 
@@ -91,7 +91,7 @@ log('Import Test Dataset to test_db')
 # In[12]:
 
 
-test_db = util.read_data('../data/testData.csv')
+test_db = pd.read_csv('../data/testData.csv')
 test_db.head(2)
 
 
