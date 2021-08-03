@@ -2,5 +2,3 @@
     remote = dvc-remote
 ['remote "dvc-remote"']
     url = gdrive://1ici4lhD7MXC8j6TBR7uiENWrpDrFULhq/dvcstore
-    gdrive_client_id = 223204138564-3tr0kbaql4i88emvaovop7jgd109bm5h.apps.googleusercontent.com
-    gdrive_client_secret = Vc9SKggAmCItsOcBhn0hV13L

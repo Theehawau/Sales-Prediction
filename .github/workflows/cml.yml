@@ -12,8 +12,7 @@ jobs:
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          gdrive_client_id: ${{ secrets.GDRIVE_CLIENT_ID}}
-          gdrive_client_secret: ${{ secrets.GDRIVE_CLIENT_SECRET}}
+          gdrive-user-credentials: ${{ secrets.GDRIVE_CLIENT_SECRET}}
         run: |
           pip install -r requirements.txt
           dvc pull
