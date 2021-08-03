@@ -6,3 +6,4 @@ plotly
 seaborn
 numpy
 scikit_learn
+dvc
