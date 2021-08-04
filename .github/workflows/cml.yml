@@ -16,8 +16,8 @@ jobs:
         run: |
           pip install -r requirements.txt
           dvc pull
-          cd ../../scripts
-          python Modelling.py
+          cd ../
+          python scripts/Modelling.py
 
           cat metrics.txt >> report.md
           cml-send-comment report.md
