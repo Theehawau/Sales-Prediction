@@ -91,7 +91,7 @@ log('Import Test Dataset to test_db')
 # In[12]:
 
 
-test_db = pd.read_csv('../data/testData.csv')
+test_db = pd.read_csv('data/testData.csv')
 test_db.head(2)
 
 
