@@ -43,8 +43,8 @@ def log(text):
 # In[5]:
 
 
-import sys, os 
-sys.path.append(os.path.abspath(os.path.join('../scripts/')))
+# import sys, os 
+# sys.path.append(os.path.abspath(os.path.join('../scripts/')))
 log('Import utility scripts')
 from data_cleaner import *
 
@@ -66,7 +66,7 @@ log('Import Train Dataset to db')
 # In[8]:
 
 
-db = pd.read_csv('../data/trainData.csv')
+db = pd.read_csv('data/trainData.csv')
 db.head(2)
 
 
