@@ -1,4 +1,4 @@
-# Sales Prediction for Rozzman Pharmaceuticals
+# Sales Prediction for Rossman Pharmaceuticals
 
 
 ### Overview
@@ -11,11 +11,11 @@ The Datasets for this project can be found here
 python-3.6.4
 
 ### Installation
-git clone this repo
+§§ git clone [this repo](https://github.com/Theehawau/Sales-Prediction)
 
-cd Sales-Prediction
+§§ cd Sales-Prediction
 
-run pip -r install requirements.txt
+§§ pip -r install requirements.txt
 
 ### Features
 #### Exploratory Data Analysis
