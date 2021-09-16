@@ -1,22 +1,21 @@
-# Sales Prediction for Rossman Pharmaceuticals
-
+# Sales Prediction
+![workflow](https://github.com/Theehawau/Sales-Prediction/actions/workflows/cml.yml/badge.svg)
 
 ### Overview
-Sales Prediction / Forecasting will help the company prepare better, plan ahead and the exploratory data analysis will help to determine what factors affect sales and how to exploit those factors and maximize sales.
-Sales Prediction is a regression problem as it is about with predicting a value. Various Machine Learning Regression algorithms would bw used for this project.
-Loss function used for the model is Mean Squared Error because of the meaningful outliers in the dataset. 
-The Datasets for this project can be found here 
+<p>Sales Prediction / Forecasting will help a business prepare better, plan ahead and the exploratory data analysis will help to determine what factors affect sales and how to exploit those factors and maximize sales.
+Sales Prediction is a regression problem as it is about predicting a value. Various Machine Learning Regression algorithms would be used for this project.
+Loss function used for the model is Mean Squared Error because of the meaningful outliers in the dataset.</p>
+<p>The Datasets for this project can be found <a href="https://drive.google.com/file/d/1Cyru3Q4wyEisnxR2r4K95kYDiETJ9oQK/view?usp=sharing">here</a></p>
 
 ### Runtime
 python-3.6.4
 
 ### Installation
-§§ git clone [this repo](https://github.com/Theehawau/Sales-Prediction)
-
-§§ cd Sales-Prediction
-
-§§ pip -r install requirements.txt
-
+```sh
+git clone https://github.com/Theehawau/Sales-Prediction
+cd Sales-Prediction
+pip -r install requirements.txt
+```
 ### Features
 #### Exploratory Data Analysis
 The datasets were explored in [this file](../main/notebooks/Exploratory-Analysis.ipynb)
